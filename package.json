@@ -1,0 +1,17 @@
+{
+  "name": "babel-browserify",
+  "version": "1.0.0",
+  "description": "Quickstart for playing with Babel using Browserify",
+  "dependencies": {
+    "babelify": "^6.0.1",
+    "browserify": "^9.0.6",
+    "watch": "^0.15.0"
+  },
+  "scripts": {
+    "build": "browserify ./app/app.js -t babelify -o ./app/app.bundle.js",
+    "serve": "cd app && python -m SimpleHTTPServer",
+    "watch": "watch 'npm run build' ./app"
+  },
+  "author": "Adam Argyle",
+  "license": "ISC"
+}
