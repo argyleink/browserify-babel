@@ -8,9 +8,9 @@
     "watch": "^0.15.0"
   },
   "scripts": {
-    "build": "browserify ./app/app.js -t babelify -o ./app/app.bundle.js",
+    "build": "browserify ./app/browserify/*.js -t babelify -o ./app/js/app.bundle.js",
     "serve": "cd app && python -m SimpleHTTPServer",
-    "watch": "watch 'npm run build' ./app"
+    "watch": "watch 'npm run build' ./app/browserify"
   },
   "author": "Adam Argyle",
   "license": "ISC"
